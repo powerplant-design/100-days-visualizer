@@ -137,4 +137,27 @@ main {
   background: greenyellow;
   width: 100%;
 }
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+footer a {
+  display: inline;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  -webkit-transition: border 300ms;
+  transition: border 300ms;
+}
+
+footer a:hover {
+  border-bottom: 4px solid #1c1c1c;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.4rem;
+  }
+}
 /*# sourceMappingURL=imakethislookgood.css.map */
