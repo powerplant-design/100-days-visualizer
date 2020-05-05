@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'VT323', monospace;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(mistyrose), to(pink));
+  background-image: linear-gradient(mistyrose, pink);
+  padding: 2rem;
+  line-height: 0.8;
+  font-size: 0.8rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+  -ms-grid-columns: (100px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 100px);
+  grid-auto-rows: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.day {
+  background: lightgreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .4rem;
+  position: relative;
+}
+
+.day span {
+  color: whitesmoke;
+  font-size: 0.6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: #1c1c1c;
+  padding: 3px;
+  border-radius: 100%;
+}
+
+.kev {
+  background: aqua;
+  width: 100%;
+  padding: 0.4rem;
+}
+
+.kev::before {
+  content: 'Kevin Powells\' Conquering Responsive Design';
+  display: none;
+}
+
+.kev:hover::before {
+  display: inline;
+}
+
+.wes-grid {
+  background: #ffc601;
+  width: 100%;
+  padding: 0.4rem;
+}
+
+.wes-grid::before {
+  content: 'Wes Bos\' CSS Grid';
+  display: none;
+}
+
+.wes-grid:hover::before {
+  display: inline;
+}
+
+.project {
+  background: #1c1c1c;
+  width: 100%;
+  padding: 0.4rem;
+}
+
+.project::before {
+  color: whitesmoke;
+  content: 'Project Build';
+  display: none;
+}
+
+.project:hover::before {
+  display: inline;
+}
+
+.day100 {
+  background: greenyellow;
+  width: 100%;
+}
+/*# sourceMappingURL=imakethislookgood.css.map */
